@@ -1,0 +1,55 @@
+.console-container {
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    width: 800px;
+    color: white;
+}
+
+#text {
+    text-align: center;
+}
+
+.console-underscore {
+    display: inline-block;
+    position: relative;
+    top: -0.14em;
+    left: 10px;
+}
+
+@media screen and (max-width: 850px) {
+    .console-container {
+        font-size: 2.5rem;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .console-container {
+        margin-top: 2rem;
+        font-size: 2rem;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .console-container {
+        font-size: 1.7rem;
+        width: 370px;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .console-container {
+        display: none;
+    }
+}
