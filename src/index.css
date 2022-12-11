@@ -33,6 +33,15 @@ section {
   max-width: 1580px;
 }
 
+svg {
+  color: white;
+  margin: 0 5px;
+}
+
+span {
+  vertical-align: middle;
+}
+
 @media screen and (max-width: 650px) {
   h1 {
       font-size: 2.5rem;

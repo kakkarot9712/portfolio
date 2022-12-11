@@ -1,20 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import classes from "./HeaderBrand.module.css";
+import brandImg from "../../assets/brand.png";
 
 const HeaderBrand = () => {
   return (
-    <div class="header-brand">
-      <div class="hamburger-btn">
+    <div className={classes["header-brand"]}>
+      <div className={classes["hamburger-btn"]}>
+        {/* TODO: Click Listner */}
         <div></div>
         <div></div>
         <div></div>
       </div>
-      <NavLink className="header-brand__link" to="/">
-        <img
-          src="../../assets/brand.png"
-          alt="Brand Logo"
-          class="header-brand__logo"
-        />
-      </NavLink>
+      <Link className={classes["header-brand__link"]} to="/">
+        <img src={brandImg} alt="Brand Logo" />
+      </Link>
     </div>
   );
 };
