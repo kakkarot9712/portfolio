@@ -11,7 +11,7 @@ const MainNav = () => {
     <nav className={classes["main-nav"]}>
       <ul className={classes["main-nav__items"]}>
         <li className={classes["main-nav__item"]}>
-          <NavLink to="/home">
+          <NavLink to="/">
             <span>
               <HomeSVG />
             </span>
