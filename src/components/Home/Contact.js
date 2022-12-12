@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section id={classes.contacts}>
       <h1>
-        Feel free to <span class="color-text">connect</span> with me
+        Feel free to <span className="color-text">connect</span> with me
       </h1>
       <div>
         <div className={`${classes.contactNo} ${classes.contact}`}>
@@ -17,7 +17,7 @@ const Contact = () => {
           <a href="tel:+918000863064">+91 8000863064</a>
         </div>
         <div className={`${classes.emailAddr} ${classes.contact}`}>
-          <span class="svg-back">
+          <span className="svg-back">
             <EmailSVG />
           </span>
           <a href="mailto:vikalpgandha9712@gmail.com">

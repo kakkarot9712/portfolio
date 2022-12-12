@@ -1,5 +1,14 @@
+import React from "react";
+import SocialLinks from "../components/Contact/SocialLinks";
+import Contact from "../components/Home/Contact";
+
 const Contacts = (props) => {
-  return <h1>Contacts Page</h1>;
+  return (
+    <React.Fragment>
+      <Contact />
+      <SocialLinks />
+    </React.Fragment>
+  );
 };
 
 export default Contacts;
