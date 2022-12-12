@@ -3,9 +3,8 @@ import classes from "./RepoIcon.module.css";
 
 const RepoIcon = () => {
   return (
-    <div>
+    <div className={classes["portfolio-repo"]}>
       <a
-        className={classes["portfolio-repo"]}
         role="button"
         tabIndex="0"
         target="_blank"

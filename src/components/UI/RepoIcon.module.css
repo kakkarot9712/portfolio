@@ -1,14 +1,19 @@
 .portfolio-repo {
+    vertical-align: middle;
+    padding: 0 1rem;
+}
+
+.portfolio-repo a {
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding: 5px;
     border-radius: 5px;
     background-color: #ce2a56;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-decoration: none;
     color: white;
     -webkit-transition: all 0.8s;
@@ -16,7 +21,7 @@
     transition: all 0.8s;
 }
 
-.portfolio-repo:hover {
+.portfolio-repo a:hover {
     cursor: pointer;
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
