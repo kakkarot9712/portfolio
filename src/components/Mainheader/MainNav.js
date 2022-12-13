@@ -12,7 +12,7 @@ const MainNav = () => {
       <ul className={classes["main-nav__items"]}>
         <li className={classes["main-nav__item"]}>
           <NavLink to="/">
-            <span>
+            <span className={classes["svg-span"]}>
               <HomeSVG />
             </span>
             Home
@@ -20,7 +20,7 @@ const MainNav = () => {
         </li>
         <li className={classes["main-nav__item"]}>
           <NavLink to="/about">
-            <span>
+            <span className={classes["svg-span"]}>
               <AboutSVG />
             </span>
             About
@@ -28,7 +28,7 @@ const MainNav = () => {
         </li>
         <li className={classes["main-nav__item"]}>
           <NavLink to="/projects">
-            <span>
+            <span className={classes["svg-span"]}>
               <ProjectSVG />
             </span>
             Projects
@@ -36,7 +36,7 @@ const MainNav = () => {
         </li>
         <li className={classes["main-nav__item"]}>
           <NavLink to="/resume">
-            <span>
+            <span className={classes["svg-span"]}>
               <ResumeSVG />
             </span>
             Resume
@@ -44,7 +44,7 @@ const MainNav = () => {
         </li>
         <li className={classes["main-nav__item"]}>
           <NavLink to="/contacts">
-            <span>
+            <span className={classes["svg-span"]}>
               <ContactSVG />
             </span>
             Contact
