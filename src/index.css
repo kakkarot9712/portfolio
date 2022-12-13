@@ -26,6 +26,10 @@ h1 {
   text-align: center;
 }
 
+p {
+  font-size: 1.15rem;
+}
+
 section {
   margin: auto;
   padding-top: 3rem;
@@ -39,7 +43,7 @@ svg {
 }
 
 span {
-  vertical-align: middle;
+  display: inline-block;
 }
 
 .svg-back {

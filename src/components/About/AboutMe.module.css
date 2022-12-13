@@ -1,0 +1,58 @@
+section {
+    width: 80%;
+    margin-bottom: 3.5rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+svg {
+    fill: white;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.who-am-i {
+    padding-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+
+.who-am-i__info {
+    width: 75%;
+}
+
+.who-am-i__activities {
+    list-style: none;
+    padding: 1.5rem;
+}
+
+.who-am-i__activity {
+    font-size: 1.15rem;
+}
+
+.svg-span {
+    padding-top: 2px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 930px) {
+    .who-am-i {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .who-am-i__info {
+        width: 100%;
+    }
+}
