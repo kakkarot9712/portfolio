@@ -1,0 +1,24 @@
+.portfolio-info {
+    width: 100%;
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(207, 42, 86, 0.8);
+            box-shadow: 2px 2px 2px 2px rgba(207, 42, 86, 0.8);
+    border: #ce2a56 2px solid;
+}
+
+.svg-span {
+    display: inline-block;
+    background-color: #ce2a56;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 0 5px
+}
+
+.svg-span svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    vertical-align: middle;
+    fill: white;
+}
