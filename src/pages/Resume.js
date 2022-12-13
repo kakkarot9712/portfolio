@@ -1,5 +1,7 @@
+import ResumeComponent from "../components/Resume/ResumeComponent";
+
 const Resume = (props) => {
-  return <h1>Resume Page</h1>;
+  return <ResumeComponent />;
 };
 
 export default Resume;
