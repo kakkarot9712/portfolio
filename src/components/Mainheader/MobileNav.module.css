@@ -1,5 +1,5 @@
 .mobile-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: -webkit-box;
@@ -78,4 +78,12 @@
 
 .mobile-nav__item a:hover::after {
     width: 100%;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.close {
+    transform: translateX(-100%);
 }
