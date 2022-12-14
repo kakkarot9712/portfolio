@@ -1,4 +1,5 @@
-import * as fromPdfJslib from "pdfjs-dist";
+import * as fromPdfJslib from "pdfjs-dist/webpack";
+import pdfjsWorker from "pdfjs-dist/build/pdf.worker.entry";
 import { useCallback, useEffect, useRef } from "react";
 import classes from "./ResumeComponent.module.css";
 
@@ -7,12 +8,10 @@ const ResumeComponent = () => {
   const canvasRef = useRef();
   const renderPDF = useCallback(() => {
     // The workerSrc property shall be specified.
-    fromPdfJslib.GlobalWorkerOptions.workerSrc =
-      "//cdn.jsdelivr.net/npm/pdfjs-dist@3.0.279/build/pdf.worker.js";
+    fromPdfJslib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
     // Asynchronous download of PDF
     let loadingtask = fromPdfJslib.getDocument(url);
-    console.log("here");
     loadingtask.promise.then(
       (pdf) => {
         let pageNumber = 1;

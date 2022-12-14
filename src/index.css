@@ -32,7 +32,8 @@ p {
 
 section {
   margin: auto;
-  padding-top: 3rem;
+  width: 80%;
+  padding: 3rem;
   color: white;
   max-width: 1580px;
 }

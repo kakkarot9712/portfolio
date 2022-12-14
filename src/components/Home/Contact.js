@@ -28,8 +28,7 @@ const Contact = () => {
           <span className="svg-back">
             <AddressSVG />
           </span>
-          {/* TODO: Change a to p */}
-          <a>Jamnagar, Gujarat</a>
+          <p>Jamnagar, Gujarat</p>
         </div>
       </div>
     </section>

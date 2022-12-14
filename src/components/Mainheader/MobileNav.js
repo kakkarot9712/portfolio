@@ -28,7 +28,7 @@ const MobileNav = (props) => {
           <ul className={classes["mobile-nav__items"]}>
             <li className={classes["mobile-nav__item"]}>
               <NavLink to="/">
-                <span>
+                <span className={classes["svg-span"]}>
                   <HomeSVG />
                 </span>
                 Home
@@ -36,7 +36,7 @@ const MobileNav = (props) => {
             </li>
             <li className={classes["mobile-nav__item"]}>
               <NavLink to="/about">
-                <span>
+                <span className={classes["svg-span"]}>
                   <AboutSVG />
                 </span>
                 About
@@ -44,7 +44,7 @@ const MobileNav = (props) => {
             </li>
             <li className={classes["mobile-nav__item"]}>
               <NavLink to="/projects">
-                <span>
+                <span className={classes["svg-span"]}>
                   <ProjectSVG />
                 </span>
                 Projects
@@ -52,7 +52,7 @@ const MobileNav = (props) => {
             </li>
             <li className={classes["mobile-nav__item"]}>
               <NavLink to="/resume">
-                <span>
+                <span className={classes["svg-span"]}>
                   <ResumeSVG />
                 </span>
                 Resume
@@ -60,7 +60,7 @@ const MobileNav = (props) => {
             </li>
             <li className={classes["mobile-nav__item"]}>
               <NavLink to="/contacts">
-                <span>
+                <span className={classes["svg-span"]}>
                   <ContactSVG />
                 </span>
                 Contact

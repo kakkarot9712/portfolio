@@ -4,6 +4,7 @@ import classes from "./ProjectsSection.module.css";
 const ProjectsSection = () => {
   const PROJECTS = [
     {
+      project_id: 1,
       project_name: "TODO App",
       project_description:
         "In this app, user can add tasks, can mark as important or completed and can delete task. This app stores data inside local storage and user even can use cloud mode.",
@@ -13,6 +14,7 @@ const ProjectsSection = () => {
       project_sourcecode: "https://github.com/kakkarot9712/ToDoApp",
     },
     {
+      project_id: 2,
       project_name: "Expense Tracker",
       project_description:
         "User can add and track expenses with support for graphical visualization and comparison of monthly expenses.This app also supports storing data locally and thus it will retain data after refresh.",
@@ -22,6 +24,7 @@ const ProjectsSection = () => {
       project_sourcecode: "https://github.com/kakkarot9712/Expense-Tracker",
     },
     {
+      project_id: 3,
       project_name: "Tic-Tac-Toe",
       project_description:
         "Just simple Tic-tac-toe game with few small features including capability of changing name.  Note:- This app is part of WebAppsCollection Project",
@@ -31,6 +34,7 @@ const ProjectsSection = () => {
       project_sourcecode: "https://github.com/kakkarot9712/WebAppsCollection",
     },
     {
+      project_id: 4,
       project_name: "News Feed",
       project_description:
         "In this website, User can search for Latest headlines in multiple supported category or user can search news with custom params, This app is also part of WebAppsCollection Project",
@@ -40,6 +44,7 @@ const ProjectsSection = () => {
       project_sourcecode: "https://github.com/kakkarot9712/WebAppsCollection",
     },
     {
+      project_id: 5,
       project_name: "Wall Clock",
       project_description:
         "Just a simple wall-clock demo, first made using HTML, CSS and JavaScript and then tweaked for Angular. This app is also part of WebAppsCollection Project",

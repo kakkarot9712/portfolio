@@ -1,6 +1,7 @@
 .section {
     color: white;
     text-align: center;
+    padding: 0;
     padding-top: 2rem;
     width: 100%;
 }
