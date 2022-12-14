@@ -26,6 +26,10 @@
     left: 10px;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 @media screen and (max-width: 850px) {
     .console-container {
         font-size: 2.5rem;

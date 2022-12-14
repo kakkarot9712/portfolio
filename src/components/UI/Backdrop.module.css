@@ -1,5 +1,5 @@
 .backdrop {
-    display: none;
+    display: block;
     background-color: #700824cc;
     position: absolute;
     top: 0;
@@ -12,3 +12,11 @@
     -o-transition: all ease-in 300ms;
     transition: all ease-in 300ms;
 }
+
+/* 
+
+text.current.textContent = words[0].substring(0, letterCount) target.setAttribute("style", "color:" + colors[0]) 
+text.current.textContent = words[0].substring(0, letterCount)
+target.setAttribute("style", "color:" + colors[0])
+
+*/

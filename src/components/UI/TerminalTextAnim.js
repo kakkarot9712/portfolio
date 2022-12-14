@@ -1,31 +1,29 @@
-import { useCallback, useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 import classes from "./TerminalTextAnim.module.css";
 
 const TerminalText = () => {
-  const consoleContainer = useRef();
-  const text = useRef();
-  const consoleElem = useRef();
+  const [text, setText] = useState("");
+  const [color, setColor] = useState("white");
+  const [consoleClasses, setConsoleClasses] = useState("");
 
-  const consoleText = useCallback((words, colors) => {
+  const consoleText = (words, colors) => {
     if (colors === undefined) colors = ["#fff"];
     let visible = true;
-    const con = consoleElem.current;
     let letterCount = 1;
     let x = 1;
     let waiting = false;
-    const target = text.current;
-    target.setAttribute("style", "color:" + colors[0]);
+    setColor(colors[0]);
     setInterval(() => {
       if (letterCount === 0 && waiting === false) {
         waiting = true;
-        text.current.innerText = words[0].substring(0, letterCount);
+        setText(words[0].substring(0, letterCount));
         setTimeout(() => {
           let usedColor = colors.shift();
           colors.push(usedColor);
           let usedWord = words.shift();
           words.push(usedWord);
           x = 1;
-          target.setAttribute("style", "color:" + colors[0]);
+          setColor(colors[0]);
           letterCount += x;
           waiting = false;
         }, 1000);
@@ -37,22 +35,20 @@ const TerminalText = () => {
           waiting = false;
         }, 1000);
       } else if (waiting === false) {
-        text.current.innerText = words[0].substring(0, letterCount);
+        setText(words[0].substring(0, letterCount));
         letterCount += x;
       }
     }, 120);
     setInterval(() => {
       if (visible === true) {
-        con.className = "console-underscore hidden";
+        setConsoleClasses("hidden");
         visible = false;
       } else {
-        con.className = "console-underscore";
-
+        setConsoleClasses("");
         visible = true;
       }
     }, 400);
-  }, []);
-
+  };
   useEffect(() => {
     consoleText(
       [
@@ -63,15 +59,15 @@ const TerminalText = () => {
       ],
       ["tomato", "green", "lightblue"]
     );
-  }, [consoleText]);
-
+  }, []);
   return (
-    <div className={classes["console-container"]} ref={consoleContainer}>
-      <span id={classes.id} ref={text}></span>
+    <div className={classes["console-container"]}>
+      <span id={classes.id} style={{ color: color }}>
+        {text}
+      </span>
       <div
-        className={classes["console-underscore"]}
+        className={`${classes["console-underscore"]} ${classes[consoleClasses]}`}
         id="console"
-        ref={consoleElem}
       >
         &#95;
       </div>
