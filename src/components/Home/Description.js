@@ -12,12 +12,18 @@ const Description = () => {
         <p>
           I fell in love with programming and I have at least learnt something,
           My field of Interest's are building new{" "}
-          <span className="color-text">Web Technologies and Products</span>
+          <span className="color-text">Web Technologies and Products</span>{" "}
           Whenever possible, I also apply my passion for developing products
-          with
-          <span className="color-text">
-            <em>Javascript Library and Frameworks like ReactJS, Angular</em>
-          </span>
+          with{" "}
+          <em>
+            <span className="color-text">
+              Frontend Javascript Library and Frameworks like ReactJS, Angular
+            </span>{" "}
+            and{" "}
+            <span className="color-text">
+              Backend technologies like ExpressJS and MongoDB
+            </span>
+          </em>
         </p>
       </div>
       <div className={classes["description__avatar"]}>
