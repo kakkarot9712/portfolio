@@ -3,7 +3,7 @@ import classes from "./PortfolioInfo.module.css";
 
 const PortfolioInfo = () => {
   return (
-    <section>
+    <section className={classes["portfolio-info__section"]}>
       <div className={classes["portfolio-info"]}>
         <h2>Note</h2>
         <p>
