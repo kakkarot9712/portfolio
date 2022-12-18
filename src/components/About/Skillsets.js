@@ -3,6 +3,22 @@ import SkillsetsRenderer from "../UI/SkillsetsRenderer";
 const Skillsets = () => {
   const SkillData = [
     {
+      id: 8,
+      name: "ReactJS",
+    },
+    {
+      id: 9,
+      name: "NodeJS",
+    },
+    {
+      id: 10,
+      name: "ExpressJS",
+    },
+    {
+      id: 11,
+      name: "MongoDB-Mongoose",
+    },
+    {
       id: 1,
       name: "Angular",
     },

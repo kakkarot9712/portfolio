@@ -23,6 +23,18 @@ const Toolsets = () => {
       name: "Codepen",
     },
     {
+      id: 8,
+      name: "Vercel",
+    },
+    {
+      id: 9,
+      name: "Render",
+    },
+    {
+      id: 10,
+      name: "MongoDB Atlas",
+    },
+    {
       id: 6,
       name: "Firebase",
     },
