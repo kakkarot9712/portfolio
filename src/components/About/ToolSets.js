@@ -1,58 +1,42 @@
+import { useEffect } from "react";
+import useHttp from "../../hooks/useHttp";
+import LoadingSpinner from "../UI/LoadingSpinner/LoadingSpinner";
 import SkillsetsRenderer from "../UI/SkillsetsRenderer";
 
 const Toolsets = () => {
-  const Tools = [
-    {
-      id: 1,
-      name: "VS Code",
-    },
-    {
-      id: 2,
-      name: "IntelliJ Idea",
-    },
-    {
-      id: 3,
-      name: "GitHub",
-    },
-    {
-      id: 4,
-      name: "Replit",
-    },
-    {
-      id: 5,
-      name: "Codepen",
-    },
-    {
-      id: 8,
-      name: "Vercel",
-    },
-    {
-      id: 9,
-      name: "Render",
-    },
-    {
-      id: 10,
-      name: "MongoDB Atlas",
-    },
-    {
-      id: 6,
-      name: "Firebase",
-    },
-    {
-      id: 7,
-      name: "Postman",
-    },
-  ];
+  const {
+    isLoading,
+    err,
+    data: Tools,
+    sendReq,
+  } = useHttp((res) => res.data.tools);
+  let content = <h1>Tools Fetching Failed!</h1>;
 
-  return (
-    <SkillsetsRenderer
-      skills={Tools}
-      heading={{
-        normal: "Tools",
-        highlighted: "I Use",
-      }}
-    />
-  );
+  useEffect(() => {
+    sendReq(`${process.env.REACT_APP_SERVER_URL}/tools`);
+  }, []);
+
+  if (isLoading) {
+    content = <LoadingSpinner />;
+  }
+
+  if (err) {
+    content = <h1>{err}</h1>;
+  }
+
+  if (Tools.length !== 0) {
+    content = (
+      <SkillsetsRenderer
+        skills={Tools}
+        heading={{
+          normal: "Tools",
+          highlighted: "I Use",
+        }}
+      />
+    );
+  }
+
+  return content;
 };
 
 export default Toolsets;

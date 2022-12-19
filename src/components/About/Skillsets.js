@@ -1,62 +1,42 @@
+import { useEffect } from "react";
+import useHttp from "../../hooks/useHttp";
+import LoadingSpinner from "../UI/LoadingSpinner/LoadingSpinner";
 import SkillsetsRenderer from "../UI/SkillsetsRenderer";
 
 const Skillsets = () => {
-  const SkillData = [
-    {
-      id: 8,
-      name: "ReactJS",
-    },
-    {
-      id: 9,
-      name: "NodeJS",
-    },
-    {
-      id: 10,
-      name: "ExpressJS",
-    },
-    {
-      id: 11,
-      name: "MongoDB-Mongoose",
-    },
-    {
-      id: 1,
-      name: "Angular",
-    },
-    {
-      id: 2,
-      name: "JavaScript",
-    },
-    {
-      id: 3,
-      name: "Bootstrap",
-    },
-    {
-      id: 4,
-      name: "CSS",
-    },
-    {
-      id: 5,
-      name: "HTML",
-    },
-    {
-      id: 6,
-      name: "Python",
-    },
-    {
-      id: 7,
-      name: "C Language",
-    },
-  ];
+  const {
+    isLoading,
+    err,
+    data: SkillData,
+    sendReq,
+  } = useHttp((res) => res.data.languages);
+  let content = <h1>Skillsets Fetching Failed!</h1>;
 
-  return (
-    <SkillsetsRenderer
-      skills={SkillData}
-      heading={{
-        normal: "Languages and Frameworks",
-        highlighted: "I Know",
-      }}
-    />
-  );
+  useEffect(() => {
+    sendReq(`${process.env.REACT_APP_SERVER_URL}/languages`);
+  }, []);
+
+  if (isLoading) {
+    content = <LoadingSpinner />;
+  }
+
+  if (err) {
+    content = <h1>{err}</h1>;
+  }
+
+  if (SkillData.length !== 0) {
+    content = (
+      <SkillsetsRenderer
+        skills={SkillData}
+        heading={{
+          normal: "Languages and Frameworks",
+          highlighted: "I Know",
+        }}
+      />
+    );
+  }
+
+  return content;
 };
 
 export default Skillsets;

@@ -8,7 +8,7 @@ const ProjectCardRenderer = (props) => {
     <div className={classes["projects__container"]}>
       {PROJECTS.map((project) => {
         return (
-          <div key={project.project_id} className={classes.project__card}>
+          <div key={project._id} className={classes.project__card}>
             <div className={classes.project__img}>
               <img src={project.project_img_path} alt="todo app preview" />
             </div>
@@ -17,7 +17,7 @@ const ProjectCardRenderer = (props) => {
               {project.project_description}
             </p>
             <p className={classes.project__languages}>
-              {project.project_languages}
+              {project.project_languages.join(" | ")}
             </p>
             <div className={classes.project__links}>
               <a

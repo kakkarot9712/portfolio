@@ -22,7 +22,7 @@ const SkillsetsRenderer = (props) => {
       <div className={classes["skillsets__info"]}>
         {SkillData.map((skill) => {
           return (
-            <div key={skill.id} className={classes["skillset__box"]}>
+            <div key={skill._id} className={classes["skillset__box"]}>
               <span className={classes["svg-skill"]}>
                 <img
                   src={getPath(skill.name)}
