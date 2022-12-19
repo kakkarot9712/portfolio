@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
-const useHttp = (resMapper) => {
+const useHttp = () => {
   const [err, setErr] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState([]);
 
-  const sendReq = async (url) => {
+  const sendReq = useCallback(async (url, resMapper) => {
     try {
       setIsLoading(true);
       const resObj = await fetch(url);
@@ -18,7 +18,7 @@ const useHttp = (resMapper) => {
       setErr(err.message);
     }
     setIsLoading(false);
-  };
+  }, []);
   return { isLoading, err, sendReq, data };
 };
 

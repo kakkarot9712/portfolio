@@ -4,17 +4,15 @@ import LoadingSpinner from "../UI/LoadingSpinner/LoadingSpinner";
 import SkillsetsRenderer from "../UI/SkillsetsRenderer";
 
 const Toolsets = () => {
-  const {
-    isLoading,
-    err,
-    data: Tools,
-    sendReq,
-  } = useHttp((res) => res.data.tools);
+  const { isLoading, err, data: Tools, sendReq } = useHttp();
   let content = <h1>Tools Fetching Failed!</h1>;
 
   useEffect(() => {
-    sendReq(`${process.env.REACT_APP_SERVER_URL}/tools`);
-  }, []);
+    sendReq(
+      `${process.env.REACT_APP_SERVER_URL}/tools`,
+      (res) => res.data.tools
+    );
+  }, [sendReq]);
 
   if (isLoading) {
     content = <LoadingSpinner />;

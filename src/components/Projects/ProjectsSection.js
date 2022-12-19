@@ -6,24 +6,18 @@ import classes from "./ProjectsSection.module.css";
 
 const ProjectsSection = () => {
   let content = <h1>No Projects Found!</h1>;
-  const {
-    isLoading,
-    err,
-    sendReq,
-    data: projects,
-  } = useHttp((res) => {
-    return res.data.projects;
-  });
+  const { isLoading, err, sendReq, data: projects } = useHttp();
   if (isLoading) {
     content = <LoadingSpinner />;
   }
   if (err) {
     content = <h1>{err}</h1>;
   }
-  console.log(err);
   useEffect(() => {
-    sendReq(`${process.env.REACT_APP_SERVER_URL}/projects`);
-  }, []);
+    sendReq(`${process.env.REACT_APP_SERVER_URL}/projects`, (res) => {
+      return res.data.projects;
+    });
+  }, [sendReq]);
 
   if (projects.length !== 0) {
     content = <ProjectCardRenderer projects={projects} />;
