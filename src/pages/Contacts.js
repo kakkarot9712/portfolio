@@ -1,6 +1,6 @@
 import React from "react";
 import SocialLinks from "../components/Contact/SocialLinks";
-import Contact from "../components/Home/Contact";
+import Contact from "../components/Contact/Contact";
 
 const Contacts = (props) => {
   return (
