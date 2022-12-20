@@ -13,14 +13,17 @@ const GHCalander = () => {
   const LastSixMonths = useCallback((contributions) => {
     const currentYear = new Date().getFullYear();
     const currentMonth = new Date().getMonth();
+    const currentDay = new Date().getDate();
     const shownMonths = 6;
     return contributions.contributions.filter((day) => {
       const date = new Date(day.date);
       const monthOfDay = date.getMonth();
+      const commitDate = date.getDate();
       return (
         date.getFullYear() === currentYear &&
         monthOfDay > currentMonth - shownMonths &&
-        monthOfDay <= currentMonth
+        monthOfDay <= currentMonth &&
+        commitDate <= currentDay
       );
     });
   }, []);
@@ -51,7 +54,7 @@ const GHCalander = () => {
 
   useEffect(() => {
     sendReq(
-      "https://github-contributions-api.jogruber.de/v4/kakkarot9712?y=last",
+      "https://github-contributions-api.jogruber.de/v4/kakkarot9712",
       LastSixMonths
     );
   }, [sendReq, LastSixMonths]);
