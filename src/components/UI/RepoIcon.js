@@ -9,7 +9,7 @@ const RepoIcon = () => {
         tabIndex="0"
         target="_blank"
         rel="noreferrer"
-        href="https://github.com/kakkarot9712/portfolio-website"
+        href="https://github.com/kakkarot9712/portfolio"
       >
         <RepoIconSVG />
       </a>
