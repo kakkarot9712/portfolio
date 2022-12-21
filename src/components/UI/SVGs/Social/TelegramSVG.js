@@ -2,8 +2,8 @@ const TelegramSVG = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="4rem"
-      height="1.3rem"
+      width="64px"
+      height="20.8px"
       fill="currentColor"
       viewBox="0 0 16 16"
     >

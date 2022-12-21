@@ -18,8 +18,8 @@
     margin-bottom: 2rem;
 }
 
-@media screen and (max-width=480px) {
+@media screen and (max-width: 480px) {
     .center {
-        padding: 0;
+        padding: 1rem;
     }
 }

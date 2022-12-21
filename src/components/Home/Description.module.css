@@ -27,9 +27,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 45%;
-    margin: 1rem 0;
-    min-width: 459px;
+    margin: 1rem;
+    max-width: 900px;
 }
 
 .description__text p {
@@ -37,6 +36,7 @@
     -ms-flex-item-align: start;
         align-self: flex-start;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .description__avatar {

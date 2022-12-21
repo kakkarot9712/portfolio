@@ -68,7 +68,7 @@
     width: 100%;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .main-nav__item {
         padding: 0 0.5rem;
         font-size: 1rem;
