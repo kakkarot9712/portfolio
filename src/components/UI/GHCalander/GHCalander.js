@@ -79,6 +79,7 @@ const GHCalander = () => {
         blockSize={30}
         blockRadius={5}
         blockMargin={5}
+        hideColorLegend={true}
         fontSize={20}
       />
     );
@@ -99,3 +100,5 @@ const GHCalander = () => {
 };
 
 export default GHCalander;
+
+// Media query at 700

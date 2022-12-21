@@ -87,6 +87,7 @@ span {
 @media screen and (max-width: 470px) {
   section {
       margin: auto;
+      padding: 1rem;
       padding-top: 2rem;
   }
 
