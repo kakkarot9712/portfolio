@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 import LoadingSpinner from "./components/UI/LoadingSpinner/LoadingSpinner";
 import Main from "./components/UI/Main";
 
