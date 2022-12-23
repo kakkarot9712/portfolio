@@ -100,5 +100,3 @@ const GHCalander = () => {
 };
 
 export default GHCalander;
-
-// Media query at 700

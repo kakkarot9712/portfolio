@@ -1,13 +1,8 @@
 import { useRef } from "react";
-import { NavLink } from "react-router-dom";
 import CSSTransition from "react-transition-group/CSSTransition";
 import Backdrop from "../UI/Backdrop";
-import AboutSVG from "../UI/SVGs/AboutSVG";
-import ContactSVG from "../UI/SVGs/ContactSVG";
-import HomeSVG from "../UI/SVGs/Home";
-import ProjectSVG from "../UI/SVGs/ProjectSVG";
-import ResumeSVG from "../UI/SVGs/ResumeSVG";
-import classes from "./MobileNav.module.css";
+import classes from "./Navbar.module.css";
+import Navbar from "./Navbar";
 
 const MobileNav = (props) => {
   const navbarRef = useRef();
@@ -24,50 +19,7 @@ const MobileNav = (props) => {
       }}
     >
       <Backdrop in={props.open} closeNav={props.closeNav}>
-        <nav className={classes["mobile-nav"]} ref={navbarRef}>
-          <ul className={classes["mobile-nav__items"]}>
-            <li className={classes["mobile-nav__item"]}>
-              <NavLink to="/">
-                <span className={classes["svg-span"]}>
-                  <HomeSVG />
-                </span>
-                Home
-              </NavLink>
-            </li>
-            <li className={classes["mobile-nav__item"]}>
-              <NavLink to="/about">
-                <span className={classes["svg-span"]}>
-                  <AboutSVG />
-                </span>
-                About
-              </NavLink>
-            </li>
-            <li className={classes["mobile-nav__item"]}>
-              <NavLink to="/projects">
-                <span className={classes["svg-span"]}>
-                  <ProjectSVG />
-                </span>
-                Projects
-              </NavLink>
-            </li>
-            <li className={classes["mobile-nav__item"]}>
-              <NavLink to="/resume">
-                <span className={classes["svg-span"]}>
-                  <ResumeSVG />
-                </span>
-                Resume
-              </NavLink>
-            </li>
-            <li className={classes["mobile-nav__item"]}>
-              <NavLink to="/contacts">
-                <span className={classes["svg-span"]}>
-                  <ContactSVG />
-                </span>
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
+        <Navbar type="mobile" ref={navbarRef} />
       </Backdrop>
     </CSSTransition>
   );
