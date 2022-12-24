@@ -53,7 +53,7 @@ const TerminalText = () => {
     consoleText(
       [
         "MERN Stack Developer",
-        "Full Stack Developer",
+        "Backend Developer",
         "Engineer",
         "Quick Learner",
       ],
