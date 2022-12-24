@@ -1,6 +1,6 @@
 # Portfolio Website
 
-My portfolio Website made using HTML, CSS and Angular. This project was generated with [Create React App](https://github.com/facebook/create-react-app)
+My portfolio Website made using HTML, CSS ,JavaScript and ReactJS. This project was generated with [Create React App](https://github.com/facebook/create-react-app)
 <br>
 Note: This website uses [React.JS v18.2.0](https://github.com/facebook/react/blob/main/CHANGELOG.md#1820-june-14-2022)
 
@@ -10,7 +10,7 @@ This portfolio website contains all key details about me including languages I k
 
 ## Demo
 
-Here is the [Demo of website](https://portfolio-kakkarot9712.vercel.app/)
+Here is the [Demo of website](https://vikalpgandha.vercel.app/)
 <br>
 Deployed using [Vercel](https://vercel.com/)
 
@@ -28,14 +28,14 @@ Deployed using [Vercel](https://vercel.com/)
   <br>
   Desktop Version
   <br>
-  <img src='/src/assets/imgs/home-desktop.png'></img>
-  <img src='/src/assets/imgs/desktop-skills.png'></img>
+  <img src='/public/assets/imgs/home-desktop.png'></img>
+  <img src='/public/assets/imgs/desktop-about.png'></img>
   <br>
   Mobile version
   <br>
-  <img src='/src/assets/imgs/mobile-home.jpg'></img>
-  <img src='/src/assets/imgs/mobile-tools.jpg'></img>
-  <img src='/src/assets/imgs/mobile-navbar.jpg'></img>
+  <img src='/public/assets/imgs/mobile-home.jpg'></img>
+  <img src='/public/assets/imgs/mobile-tools.jpg'></img>
+  <img src='/public/assets/imgs/mobile-navbar.jpg'></img>
 </details>
 
 ## Getting Started
@@ -59,6 +59,12 @@ npm install
 
 ```
 npm start
+```
+
+- If Above command is working correctly then user can build this project by using below command.
+
+```
+npm run build
 ```
 
 ## Credits
