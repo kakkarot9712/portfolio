@@ -28,7 +28,7 @@ const Contact = () => {
           <span className="svg-back">
             <AddressSVG />
           </span>
-          <p>Jamnagar, Gujarat</p>
+          <p>Ahmedabad, Gujarat</p>
         </div>
       </div>
     </section>
