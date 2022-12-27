@@ -5,7 +5,7 @@ import SkillsetsRenderer from "../UI/SkillsetsRenderer";
 
 const Skillsets = () => {
   const { isLoading, err, data: SkillData, sendReq } = useHttp();
-  let content = <h1>Skillsets Fetching Failed!</h1>;
+  let content = <h1 style={{ color: "white" }}>Skillsets Fetching Failed!</h1>;
 
   useEffect(() => {
     sendReq(
@@ -19,7 +19,7 @@ const Skillsets = () => {
   }
 
   if (err) {
-    content = <h1>{err}</h1>;
+    content = <h1 style={{ color: "white" }}>{err}</h1>;
   }
 
   if (SkillData.length !== 0) {

@@ -5,7 +5,7 @@ import SkillsetsRenderer from "../UI/SkillsetsRenderer";
 
 const Toolsets = () => {
   const { isLoading, err, data: Tools, sendReq } = useHttp();
-  let content = <h1>Tools Fetching Failed!</h1>;
+  let content = <h1 style={{ color: "white" }}>Tools Fetching Failed!</h1>;
 
   useEffect(() => {
     sendReq(
@@ -19,7 +19,7 @@ const Toolsets = () => {
   }
 
   if (err) {
-    content = <h1>{err}</h1>;
+    content = <h1 style={{ color: "white" }}>{err}</h1>;
   }
 
   if (Tools.length !== 0) {

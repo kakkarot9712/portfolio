@@ -12,6 +12,10 @@
             align-items: center;
 }
 
+.skillsets h1{
+    color: white;
+}
+
 .skillsets__info {
     display: -webkit-box;
     display: -ms-flexbox;
