@@ -13,7 +13,7 @@ const AboutMe = () => {
         </h1>
         <p className={classes["who-am-i__info-text"]}>
           Hi Everyone, I am <span className="color-text">Vikalp Gandha</span>{" "}
-          from <span className="color-text">Jamnagar, India</span>. I am an
+          from <span className="color-text">Ahmedabad, India</span>. I am an
           engineer learning Web Development from various portals like Udemy and
           Youtube.
         </p>
