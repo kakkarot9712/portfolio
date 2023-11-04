@@ -6,11 +6,6 @@ const SkillsetsRenderer = (props) => {
     return str.toLowerCase().replace(" ", "-");
   };
 
-  const getPath = (str) => {
-    let formattedName = formatName(str);
-    return `assets/svgs/${formattedName}.svg`;
-  };
-
   return (
     <section className={classes.skillsets}>
       <h1>
@@ -25,7 +20,7 @@ const SkillsetsRenderer = (props) => {
             <div key={skill._id} className={classes["skillset__box"]}>
               <span className={classes["svg-skill"]}>
                 <img
-                  src={getPath(skill.name)}
+                  src={`data:image/svg+xml;base64,${skill.svg_data}`}
                   alt={formatName(skill.name) + "-logo"}
                 />
               </span>
