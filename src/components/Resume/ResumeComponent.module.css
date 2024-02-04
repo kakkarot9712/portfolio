@@ -1,40 +1,40 @@
 .section {
-    color: white;
-    text-align: center;
-    padding: 0;
-    padding-top: 2rem;
-    width: 100%;
+  color: white;
+  text-align: center;
+  padding: 0;
+  padding-top: 2rem;
+  width: 100%;
 }
 
-.section a {
-    color: white;
-    font: inherit;
-    font-size: large;
-    text-decoration: none;
-    background-color: #ce2a56;
-    display: inline-block;
-    padding: 0.5rem;
-    width: 100%;
+.downloadBtn {
+  color: white;
+  font: inherit;
+  font-size: large;
+  text-decoration: none;
+  background-color: #ce2a56;
+  display: inline-block;
+  padding: 0.5rem;
+  width: 100%;
 }
 
 .section a:hover,
 .section a:active {
-    background-color: #811d37;
-    cursor: pointer;
+  background-color: #811d37;
+  cursor: pointer;
 }
 
-.canvas_container{
-    margin: 2rem 0;
+.canvas_container {
+  width: 90%;
+  max-width: 1110px;
+  margin-top: 2rem;
+  margin-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
 }
 
-.section canvas {
-    width: 70%;
-    max-width: 950px;
-    margin: auto;
-}
-
-@media screen and (max-width: 800px) {
-    .section canvas{
-        width: 95%;
-    }
+canvas {
+  background-color: #ce2a56;
 }
