@@ -8,7 +8,7 @@ function App() {
   const About = React.lazy(() => import("./pages/About"));
   const Contacts = React.lazy(() => import("./pages/Contacts"));
   const NotFound = React.lazy(() => import("./pages/NotFound"));
-  const Projects = React.lazy(() => import("./pages/Project"));
+  // const Projects = React.lazy(() => import("./pages/Project"));
   const Resume = React.lazy(() => import("./pages/Resume"));
   return (
     <Main>
@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
-          <Route path="/projects" element={<Projects />} />
+          {/* <Route path="/projects" element={<Projects />} /> */}
           <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

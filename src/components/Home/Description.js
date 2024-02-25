@@ -21,7 +21,8 @@ const Description = () => {
             </span>{" "}
             and{" "}
             <span className="color-text">
-              Backend technologies like ExpressJS and MongoDB
+              Backend technologies like Node.js, ExpressJS, MongoDB, Docker and
+              Cloud Services like Azure and AWS.
             </span>
           </em>
         </p>

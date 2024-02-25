@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import AboutSVG from "../UI/SVGs/AboutSVG";
 import ContactSVG from "../UI/SVGs/ContactSVG";
 import HomeSVG from "../UI/SVGs/Home";
-import ProjectSVG from "../UI/SVGs/ProjectSVG";
+// import ProjectSVG from "../UI/SVGs/ProjectSVG";
 import ResumeSVG from "../UI/SVGs/ResumeSVG";
 import classes from "./Navbar.module.css";
 
@@ -37,7 +37,7 @@ const Navbar = (props, ref) => {
             About
           </NavLink>
         </li>
-        <li className={classes[`${props.type}-nav__item`]}>
+        {/* <li className={classes[`${props.type}-nav__item`]}>
           <NavLink
             to="/projects"
             className={({ isActive }) =>
@@ -49,7 +49,7 @@ const Navbar = (props, ref) => {
             </span>
             Projects
           </NavLink>
-        </li>
+        </li> */}
         <li className={classes[`${props.type}-nav__item`]}>
           <NavLink
             to="/resume"

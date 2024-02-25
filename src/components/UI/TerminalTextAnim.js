@@ -54,6 +54,8 @@ const TerminalText = () => {
       [
         "MERN Stack Developer",
         "Backend Developer",
+        "Blockchain Developer",
+        "Node.js Developer",
         "Engineer",
         "Quick Learner",
       ],

@@ -7,10 +7,10 @@ const Footer = () => {
   return (
     <footer className={classes.footer}>
       <p>Developed by Vikalp Gandha</p>
-      <p>Copyright &copy; 2022 VG</p>
+      <p>Copyright &copy; 2022-{new Date().getFullYear()} VG</p>
       <div className={classes["social-links"]}>
         <a
-          href="https://www.linkedin.com/in/vikalp-gandha-bb9778256/"
+          href="https://www.linkedin.com/in/vikalp-gandha/"
           target="_blank"
           rel="noreferrer"
         >
