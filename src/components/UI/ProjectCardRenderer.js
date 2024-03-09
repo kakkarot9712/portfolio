@@ -4,6 +4,7 @@ import classes from "./ProjectCardRenderer.module.css";
 
 const ProjectCardRenderer = (props) => {
   const PROJECTS = props.projects;
+  console.log(PROJECTS);
   return (
     <div className={classes["projects__container"]}>
       {PROJECTS.map((project) => {

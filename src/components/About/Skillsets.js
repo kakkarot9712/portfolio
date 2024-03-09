@@ -8,10 +8,7 @@ const Skillsets = () => {
   let content = <h1 style={{ color: "white" }}>Skillsets Fetching Failed!</h1>;
 
   useEffect(() => {
-    sendReq(
-      `${process.env.REACT_APP_SERVER_URL}/languages`,
-      (res) => res.data.languages
-    );
+    sendReq(`${process.env.REACT_APP_SERVER_URL}/languages`, (res) => res);
   }, [sendReq]);
 
   if (isLoading) {

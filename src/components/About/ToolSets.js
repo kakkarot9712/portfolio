@@ -8,10 +8,7 @@ const Toolsets = () => {
   let content = <h1 style={{ color: "white" }}>Tools Fetching Failed!</h1>;
 
   useEffect(() => {
-    sendReq(
-      `${process.env.REACT_APP_SERVER_URL}/tools`,
-      (res) => res.data.tools
-    );
+    sendReq(`${process.env.REACT_APP_SERVER_URL}/tools`, (res) => res);
   }, [sendReq]);
 
   if (isLoading) {
