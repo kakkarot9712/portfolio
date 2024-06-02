@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
+
+My portfolio Website is made using [Next.js v14](https://nextjs.org/). This project was bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<br>
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+## Description
+
+This portfolio website contains all key details about me including languages I know, projects I made and contact information, etc
+
+## Demo
+
+Here is the [Demo of the website](https://vikalpg.in/)
+<br>
+Deployed using [Vercel](https://vercel.com/)
+
+## Built With 
+<img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" />
+
+## Screenshots
+
+<details>
+  <summary>Click to see screenshots</summary>
+  <br>
+  Desktop Version
+  <br>
+  <img src='/public/assets/imgs/home-desktop.png'></img>
+  <img src='/public/assets/imgs/desktop-about.png'></img>
+  <br>
+  Mobile version
+  <br>
+  <img src='/public/assets/imgs/mobile-home.jpg'></img>
+  <img src='/public/assets/imgs/mobile-tools.jpg'></img>
+  <img src='/public/assets/imgs/mobile-navbar.jpg'></img>
+</details>
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. [Node.js v20 and UP](https://nodejs.org/en/) (LTS Version Recommended)
+
+### Installing
+
+If anyone wants to test this project, the user can do so by using the below instructions.
+
+- Download the source code and extract it anywhere on the PC.
+- Open the Terminal where the project is extracted and then run the following command
+
+```
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- After npm installs all dependencies, the user can run the below command to see the project in action.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- If the above command is working correctly then the user can build this project by using the below command.
 
-## Learn More
+```
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+- After Build generation is completed, use the below command to start the built project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Credits
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Tobias](https://www.sliderrevolution.com/resources/css-text-animation/) for CSS Terminal Text Effect
+- [formito.com](https://formito.com/tools/favicon) For Brand Icon
+- [Bootstrap SVGs](https://icons.getbootstrap.com/) for SVG icons
+- [svgrepo.com](https://www.svgrepo.com/svg/) for SVG icons
+- [icon8.com](https://icons8.com/icon/40670/c-programming) for C Language SVG icon
+- [Autoprefixer](https://autoprefixer.github.io/) for fetching vendor-prefixed CSS Rules.
+- [Loading.io](https://loading.io/css/) for Loading Animation
