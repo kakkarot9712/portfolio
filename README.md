@@ -1,25 +1,21 @@
 # Portfolio Website
 
-My portfolio Website made using HTML, CSS ,JavaScript and ReactJS. This project was generated with [Create React App](https://github.com/facebook/create-react-app)
+My portfolio Website is made using [Next.js v14](https://nextjs.org/). This project was bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 <br>
-Note: This website uses [React.JS v18.2.0](https://github.com/facebook/react/blob/main/CHANGELOG.md#1820-june-14-2022)
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Description
 
-This portfolio website contains all key details about me including languages I know, project I made and contact information, etc
+This portfolio website contains all key details about me including languages I know, projects I made and contact information, etc
 
 ## Demo
 
-Here is the [Demo of website](https://vikalpgandha.vercel.app/)
+Here is the [Demo of the website](https://vikalpg.in/)
 <br>
 Deployed using [Vercel](https://vercel.com/)
 
-## Built With
-
-- <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-- <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-- <img src="https://img.shields.io/badge/HTML5%20-%23e34f26.svg?&style=for-the-badge&logo=html5&logoColor=white" />
-- <img src="https://img.shields.io/badge/CSS3-1572B6?&style=for-the-badge&logo=css3&logoColor=white" />
+## Built With 
+<img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" />
 
 ## Screenshots
 
@@ -33,7 +29,6 @@ Deployed using [Vercel](https://vercel.com/)
   <br>
   Mobile version
   <br>
-  <img src='/public/assets/imgs/mobile-home.jpg'></img>
   <img src='/public/assets/imgs/mobile-tools.jpg'></img>
   <img src='/public/assets/imgs/mobile-navbar.jpg'></img>
 </details>
@@ -42,37 +37,43 @@ Deployed using [Vercel](https://vercel.com/)
 
 ### Prerequisites
 
-1. [Node.js v16.17.0 and UP](https://nodejs.org/en/) (LTS Version Recommanded)
+1. [Node.js v20 and UP](https://nodejs.org/en/) (LTS Version Recommended)
 
 ### Installing
 
-If anyone wants to test this project, user can do so by following below instruction.
+If anyone wants to test this project, the user can do so by using the below instructions.
 
-- Download source code and extract anywhere into the PC.
-- Open Terminal where project is extracted and then run following command
+- Download the source code and extract it anywhere on the PC.
+- Open the Terminal where the project is extracted and then run the following command
 
 ```
 npm install
 ```
 
-- After npm installs all dependency, user can run below command to see project in action.
+- After npm installs all dependencies, the user can run the below command to see the project in action.
 
 ```
-npm start
+npm run dev
 ```
 
-- If Above command is working correctly then user can build this project by using below command.
+- If the above command is working correctly then the user can build this project by using the below command.
 
 ```
 npm run build
+```
+
+- After Build generation is completed, use the below command to start the built project.
+
+```
+npm start
 ```
 
 ## Credits
 
 - [Tobias](https://www.sliderrevolution.com/resources/css-text-animation/) for CSS Terminal Text Effect
 - [formito.com](https://formito.com/tools/favicon) For Brand Icon
-- [Bootstrap SVGs](https://icons.getbootstrap.com/) for Svg icons
-- [svgrepo.com](https://www.svgrepo.com/svg/) for svg icons
-- [icon8.com](https://icons8.com/icon/40670/c-programming) for C Language svg icon
-- [Autoprefixer](https://autoprefixer.github.io/) for fetching vendor prefixed CSS Rules.
+- [Bootstrap SVGs](https://icons.getbootstrap.com/) for SVG icons
+- [svgrepo.com](https://www.svgrepo.com/svg/) for SVG icons
+- [icon8.com](https://icons8.com/icon/40670/c-programming) for C Language SVG icon
+- [Autoprefixer](https://autoprefixer.github.io/) for fetching vendor-prefixed CSS Rules.
 - [Loading.io](https://loading.io/css/) for Loading Animation
