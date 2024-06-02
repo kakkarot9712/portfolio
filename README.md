@@ -29,7 +29,6 @@ Deployed using [Vercel](https://vercel.com/)
   <br>
   Mobile version
   <br>
-  <img src='/public/assets/imgs/mobile-home.jpg'></img>
   <img src='/public/assets/imgs/mobile-tools.jpg'></img>
   <img src='/public/assets/imgs/mobile-navbar.jpg'></img>
 </details>
