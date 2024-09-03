@@ -10,7 +10,7 @@ This portfolio website contains all key details about me including languages I k
 
 ## Demo
 
-Here is the [Demo of the website](https://vikalpg.in/)
+Here is the [Demo of the website](https://portfolio.vikalpg.in/)
 <br>
 Deployed using [Vercel](https://vercel.com/)
 
