@@ -12,7 +12,7 @@
     "@react-hook/resize-observer": "^2.0.1",
     "framer-motion": "^11.2.10",
     "mongoose": "^8.4.1",
-    "next": "14.2.3",
+    "next": "14.2.10",
     "pdfjs-dist": "^3.1.81",
     "react": "^18",
     "react-dom": "^18",
